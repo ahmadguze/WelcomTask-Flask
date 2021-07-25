@@ -4,6 +4,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
+@app.get('/oOfc')
 @app.get('/occurrencesOfCharacters')
 def occurrences_of_characters():
     str = request.args.get('str')
